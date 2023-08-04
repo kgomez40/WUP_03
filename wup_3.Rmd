@@ -38,7 +38,13 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 
 This fancy box plot agrees with the box plot demonstrated earlier. It shows that on average the students in the back seats consume more alcohol than the students in the front seat. It also shows that the standard deviation (the variation) of alcohol consumed by the back-seat students is greater than the front and middle seat students. This is represented in the notches of the fancy box plot showing a bigger notch for the backseat students and smaller notches for the front and middle seat students.  
 
-## Numerical Summarys 
+## Numerical Summarys
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+The numerical data displays the exact averages. The front seat students drink 1.8 times per week, the middle seat students drink 3.3 times per week, and the back seat students drink 8.6 times per week. This data further agrees with the two box plots represented before. It also shows that the standard deviation of the front, middle, and back seats are 3.8, 6.2, and 12.6 respectively. Which proves that the further a student is seated in the class, the more times they consume alcohol per week.  
 
 ## Inferential Tests
 
