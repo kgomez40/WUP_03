@@ -63,4 +63,4 @@ This TuckeyHSD model shows that the differences in the mean level of drinking be
 
 ## Conclusions
 
-
+The problem that was given to us was a numerical~categorical problem so we uploaded the correct helper file which was the numerical~categorical file. We then examined each plot and data, and figured out which row drank more times per week than the others. In conclusion, according to the TuckeyHSD test, the back row drank more than the front and middle rows. The numerical data and the fancy box plot also proved this conclusion to be right because when comparing the average times per week students drink, the students in the back row had a higher average than the other two rows. Meaning that the back row drank more.
