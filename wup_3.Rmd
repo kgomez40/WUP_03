@@ -48,6 +48,19 @@ The numerical data displays the exact averages. The front seat students drink 1.
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+This anova test shows a low p-value which means that there are at least two rows where the alcohol consumption is significantly different between each row (front, middle,and back). Therefore, we need to perform another test to see which rows are different from each other.
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+This TuckeyHSD model shows that the differences in the mean level of drinking between the back and the front rows is between 12 to 4 times of alcohol per week in the back compared to the front.The comparison between the back rows and the middle rows is that the back rows are drinking about 10 to 3 times more than the middle. It also shows that the front and middle rows are not too different from each other because the third line cuts through the number 0. 
+
 ## Conclusions
 
 
