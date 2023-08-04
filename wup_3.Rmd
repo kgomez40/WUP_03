@@ -32,6 +32,12 @@ According to the boxplot, the median for the amount of alcohol consumed in the b
   
 ### get fancy  
 
+```{r}
+basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+```
+
+This fancy box plot agrees with the box plot demonstrated earlier. It shows that on average the students in the back seats consume more alcohol than the students in the front seat. It also shows that the standard deviation (the variation) of alcohol consumed by the back-seat students is greater than the front and middle seat students. This is represented in the notches of the fancy box plot showing a bigger notch for the backseat students and smaller notches for the front and middle seat students.  
+
 ## Numerical Summarys 
 
 ## Inferential Tests
